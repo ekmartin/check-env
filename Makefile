@@ -7,7 +7,7 @@ node_modules: package.json
 	@npm install
 
 jshint: node_modules
-	$(JSHINT) .
+	$(JSHINT) --exclude-path .gitignore .
 
 test: jshint
 	$(ISTANBUL) cover $(MOCHA)
