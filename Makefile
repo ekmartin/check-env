@@ -3,13 +3,10 @@ JSHINT = $(BIN)/jshint
 MOCHA = $(BIN)/_mocha
 ISTANBUL = $(BIN)/istanbul
 
-node_modules: package.json
-	@npm install
-
-jshint: node_modules
+jshint:
 	$(JSHINT) --exclude-path .gitignore .
 
-test: jshint
+test:
 	$(ISTANBUL) cover $(MOCHA)
 	$(ISTANBUL) report cobertura
 
