@@ -18,6 +18,42 @@ checkEnv(['REQUIRED_VAR', 'OTHER_VAR', 'ENV_VAR']);
 // => Throws an error if one of the variables aren't set.
 ```
 
+## CLI Usage
+
+1. Install as a project dependency as above
+2. Add to a [lifecycle script](https://docs.npmjs.com/misc/scripts) such as
+   `prestart`
+3. `npm start` will bail out (`exit(1)`) with a hard to miss error message if env vars are not set
+
+### Example:
+
+In package.json:
+
+```json
+{
+  "prestart": "check-env AWS_KEY MONGO_URL",
+  "start": "node ./mongo_api.js"
+}
+```
+
+
+```
+$ echo $MONGO_URL
+# (nothing)
+
+$ npm start
+ ________________________________________
+< Missing environment variable MONGO_URL >
+ ----------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+$ echo $?
+1
+```
 
 ## License
 
