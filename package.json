@@ -1,13 +1,13 @@
 {
   "name": "check-env",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Makes sure that all required environment variables are set.",
   "repository": {
     "type": "git",
     "url": "git@github.com:ekmartin/check-env.git"
   },
   "main": "index.js",
-  "bin" : "bin.js",
+  "bin": "bin.js",
   "scripts": {
     "test": "make test"
   },
