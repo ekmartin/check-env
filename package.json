@@ -3,10 +3,11 @@
   "version": "1.2.0",
   "description": "Makes sure that all required environment variables are set.",
   "repository": {
-      "type": "git",
-      "url": "git@github.com:ekmartin/check-env.git"
+    "type": "git",
+    "url": "git@github.com:ekmartin/check-env.git"
   },
   "main": "index.js",
+  "bin" : "bin.js",
   "scripts": {
     "test": "make test"
   },
@@ -16,5 +17,8 @@
     "istanbul": "^0.4.2",
     "jshint": "^2.6.0",
     "mocha": "^3.1.1"
+  },
+  "dependencies": {
+    "cowsay": "^1.1.9"
   }
 }
