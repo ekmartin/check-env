@@ -1,5 +1,4 @@
-# check-env
-[![CircleCI](https://circleci.com/gh/ekmartin/check-env.svg?style=svg)](https://circleci.com/gh/ekmartin/check-env)
+# check-env [![CircleCI](https://circleci.com/gh/ekmartin/check-env.svg?style=svg)](https://circleci.com/gh/ekmartin/check-env)
 
 > Makes sure that all required environment variables are set. 
 
