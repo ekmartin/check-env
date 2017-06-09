@@ -1,5 +1,5 @@
 {
-  "name": "@sequoia/check-env",
+  "name": "check-env",
   "version": "1.3.0",
   "description": "Makes sure that all required environment variables are set.",
   "repository": {
