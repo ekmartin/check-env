@@ -1,8 +1,0 @@
-tasks:
-  - npm install
-  - make jshint
-  - make test
-
-coverage:
-  path: coverage/cobertura-coverage.xml
-  parser: cobertura
