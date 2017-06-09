@@ -9,9 +9,11 @@
   "main": "index.js",
   "bin": "bin.js",
   "scripts": {
-    "test": "make test"
+    "lint": "jshint --exclude-path .gitignore .",
+    "mocha": "istanbul cover _mocha && istanbul report cobertura",
+    "test": "npm run lint && npm run mocha"
   },
-  "author": "Martin Ek <mail@ekmartin.no>",
+  "author": "Martin Ek <mail@ekmartin.com>",
   "license": "MIT",
   "devDependencies": {
     "istanbul": "^0.4.2",
