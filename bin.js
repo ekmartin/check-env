@@ -1,15 +1,13 @@
 #!/usr/bin/env node
-const check = require('./index.js');
-const cowsay = require('cowsay');
+var cowsay = require('cowsay');
+var check = require('./');
 
-try{
+try {
   check(process.argv.slice(2));
-}catch(e){
+} catch(err) {
   console.error(cowsay.say({
-    text : e.message,
+    text: err.message
   }));
+
   process.exit(1);
 }
-
-// OK
-process.exit(0);
