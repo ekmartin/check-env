@@ -1,4 +1,5 @@
-# check-env [![Build Status](https://ci.frigg.io/badges/ekmartin/check-env/)](https://ci.frigg.io/ekmartin/check-env/last/) [![Coverage status](https://ci.frigg.io/badges/coverage/ekmartin/check-env/)](https://ci.frigg.io/ekmartin/check-env/last/)
+# check-env
+[![CircleCI](https://circleci.com/gh/ekmartin/check-env.svg?style=svg)](https://circleci.com/gh/ekmartin/check-env)
 
 > Makes sure that all required environment variables are set. 
 
@@ -23,7 +24,7 @@ checkEnv(['REQUIRED_VAR', 'OTHER_VAR', 'ENV_VAR']);
 1. Install as a project dependency as above
 2. Add to a [lifecycle script](https://docs.npmjs.com/misc/scripts) such as
    `prestart`
-3. `npm start` will bail out (`exit(1)`) with a hard to miss error message if env vars are not set
+3. `npm start` will bail out (`exit(1)`) with a hard to miss error message if environment variables are not set
 
 ### Example:
 
@@ -32,7 +33,7 @@ In package.json:
 ```json
 {
   "prestart": "check-env AWS_KEY MONGO_URL",
-  "start": "node ./mongo_api.js"
+  "start": "node index.js"
 }
 ```
 
@@ -59,7 +60,7 @@ $ echo $?
 
 (The MIT License)
 
-Copyright (c) 2015 Martin Ek <mail@ekmartin.no>
+Copyright (c) 2017 Martin Ek <mail@ekmartin.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
