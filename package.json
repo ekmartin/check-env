@@ -18,7 +18,7 @@
   "devDependencies": {
     "istanbul": "^0.4.2",
     "jshint": "^2.6.0",
-    "mocha": "^3.1.1"
+    "mocha": "^5.0.0"
   },
   "dependencies": {
     "cowsay": "^1.1.9"
